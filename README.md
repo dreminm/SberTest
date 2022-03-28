@@ -1,6 +1,6 @@
 # Тестовое задание mlops
 ## Описание выполненной задачи
-* Обучил модель классификации [птиц](https://www.kaggle.com/datasets/gpiosenka/100-bird-species)
+* Обучил модель классификации [птиц](https://www.kaggle.com/datasets/gpiosenka/100-bird-species) с использованием фреймворка pytorch-lightning с поддержкой распределенного обучения (тестировал на машине с 2 gpu)
 * Логи обучения можно посмотреть здесь [wandb](https://wandb.ai/dreminm/SberBirdsTestAssignment)
 * Выполнил сервинг модели в докер контейнере с использованием torchserve
   * Файлы для архивирования модели находятся в папке [model](model)
