@@ -26,7 +26,14 @@ docker run --rm -it --gpus all -p 8080:8080 -p 8081:8081 --name mar -v deploymen
 ```
 * Получаем предсказания модели
 ```bash
-curl -X POST http://localhost:8080/predictions/final_model -T sample.jpg
+curl -X POST http://localhost:8080/predictions/final_model -T araripe.jpg
+{
+  "ARARIPE MANAKIN": 0.9999871253967285,
+  "COCK OF THE  ROCK": 3.945113348891027e-06,
+  "RED HEADED WOODPECKER": 3.533838707880932e-06,
+  "GREEN MAGPIE": 1.5303952523026965e-06,
+  "RED WISKERED BULBUL": 1.078647187569004e-06
+}
 ```
 ```python
 python get_train_results_from_server.py
