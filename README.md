@@ -3,12 +3,12 @@
 * Обучил модель классификации [птиц](https://www.kaggle.com/datasets/gpiosenka/100-bird-species)
 * Логи обучения можно посмотреть здесь [wandb](https://wandb.ai/dreminm/SberBirdsTestAssignment)
 * Выполнил сервинг модели в докер контейнере с использованием torchserve
-** Файлы для архивирования модели находятся в папке [model](model)
-** Конфигурация и архивированная модель находятся в папке [deployment](deployment)
-** Докер образ собран с использованием [репозитория](https://github.com/pytorch/serve/tree/master/kubernetes/kserve)
-** Провел тестирование модели на серевере с помощью [скрипта](get_train_results_from_server.py), ответы модели в [файле](test_answers.json), Accuracy = 0.957
+  * Файлы для архивирования модели находятся в папке [model](model)
+  * Конфигурация и архивированная модель находятся в папке [deployment](deployment)
+  * Докер образ собран с использованием [репозитория](https://github.com/pytorch/serve/tree/master/kubernetes/kserve)
+  * Провел тестирование модели на серевере с помощью [скрипта](get_train_results_from_server.py), ответы модели в [файле](test_answers.json), Accuracy = 0.957
 * Также запустил сервинг модели с помощью kserve (нативная поддержка torchserve) на кластере minikube
-** Манифесты находятся [здесь](kserving/)
+  * Манифесты находятся [здесь](kserving/)
 
 ##Обучение модели
 * [Ноутбук с кодом для обучения](TrainModel.ipynb)
